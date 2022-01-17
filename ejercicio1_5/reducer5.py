@@ -15,14 +15,12 @@ for line in sys.stdin:
    data_mapped = line.strip().split("\t")
    if len(data_mapped) != 2:
         # Something has gone wrong. Skip this line.
-            continue
+          continue
 
    thisKey,thisCost = data_mapped
-
-   if float(thisCost) > max:
-    	max =float(thisCost)
-
-    
+	
+   
+   max+=float(thisCost)
    
 
 # Escribe o último par, unha vez rematado o bucle
